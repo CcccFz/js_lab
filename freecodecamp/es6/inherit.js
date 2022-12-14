@@ -1,11 +1,11 @@
-function Person() {}
+function Person() { }
 Person.prototype = {
-    constructor: Person,
-    eat() {console.log('eat');},
-    me() {console.log(this);}
+  constructor: Person,
+  eat() { console.log('eat'); },
+  me() { console.log(this); }
 }
 
-function Child() {}
+function Child() { }
 
 // 法一：
 Child.prototype = new Person()

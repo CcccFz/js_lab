@@ -1,8 +1,8 @@
 function Person() {
-    let pwd = '123'
-    this.getPWD = () => { 
-        return pwd
-    }
+  let pwd = '123'
+  this.getPWD = () => {
+    return pwd
+  }
 }
 
 const p = new Person();

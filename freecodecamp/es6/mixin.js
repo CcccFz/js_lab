@@ -1,5 +1,5 @@
 const flyMixin = obj => {
-    obj.fly = () => {}
+  obj.fly = () => { }
 }
 
 const bird = {}

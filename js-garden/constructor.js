@@ -1,17 +1,17 @@
 function Bar1() {
-    return 2;
+  return 2;
 }
 
 function Bar2() {
-    return new Number(2)
+  return new Number(2)
 }
 
 function Foo() {
-    this.value = 2;
+  this.value = 2;
 
-    return {
-        foo: 1
-    };
+  return {
+    foo: 1
+  };
 }
 
 console.log(new Bar1().constructor === Bar1);

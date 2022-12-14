@@ -1,5 +1,5 @@
 function add(x, y, z) {
-    return x + y + z
+  return x + y + z
 }
 
 // function add1(x) {

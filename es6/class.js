@@ -1,18 +1,18 @@
 function A() {
-    this.one = 1
-    this.fn1 = () => {}
+  this.one = 1
+  this.fn1 = () => { }
 }
 A.prototype.two = 2
-A.prototype.fn2 = () => {}
+A.prototype.fn2 = () => { }
 
 class B {
-    two = 2
-    #pri = 3   // 私有属性
-    constructor() {
-        this.one = 1
-        this.fn1 = () => {}
-    }
-    fn2() {}
+  two = 2
+  #pri = 3   // 私有属性
+  constructor() {
+    this.one = 1
+    this.fn1 = () => { }
+  }
+  fn2() { }
 }
 
 a = new A()

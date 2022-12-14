@@ -1,17 +1,17 @@
 // 构造函数、构造函数的显示原型对象、实例的隐式原型对象
 function Person(name) {
-    this.name = name
+  this.name = name
 }
-Person.prototype.sayName = function() {}
+Person.prototype.sayName = function () { }
 const person1 = new Person('')
 console.log(Person.prototype)
 console.log(person1.__proto__)
 console.log(person1.__proto__ === Person.prototype)
 
 // 函数是Function构造函数的实例
-function fn1(name) {}
-const fn2 = function(name) {}
-const fn3 = name => {}
+function fn1(name) { }
+const fn2 = function (name) { }
+const fn3 = name => { }
 // const fn1 = new Function('name', 'console.log(name)')
 // const fn2 = new Function('name', 'console.log(name)')
 // const fn3 = new Function('name', 'console.log(name)')
@@ -55,7 +55,7 @@ console.log(Object.prototype.__proto__ === null)
 // 原型继承，实例可以使用构造函数prototype原型对象的方法
 console.log(person1.sayName === Person.prototype.sayName)
 // 再顺着原型链去找
-Object.prototype.sayXXX = function() {}
+Object.prototype.sayXXX = function () { }
 console.log(person1.sayXXX === Object.prototype.sayXXX)
 // A instanceof B，判断B的prototype是否在A的原型路径上
 console.log(person1 instanceof Person)
