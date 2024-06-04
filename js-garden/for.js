@@ -40,3 +40,10 @@ for (let k in b) {
 
 console.log('map obj')
 Object.keys(b).map(k => console.log(k, b[k]))
+
+console.log('稀疏数组')
+c = [1, , 3]
+for (let [i, v] of c.entries()) {
+  console.log(i, v);
+}
+c.forEach((v, i) => console.log(i, v))
